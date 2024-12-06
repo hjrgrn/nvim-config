@@ -8,7 +8,9 @@ All the plugins are pinned to a specific commit in order to give better stabilit
 ## Neovim version
 
 This configuration is guaranteed to work with this version of Neovim:
+
 Commit: `8b98642002d0506d20628683958cb5c97a0dad80`
+
 Build Neovim [from source](https://github.com/neovim/neovim/blob/master/BUILD.md), expecially if you are using Debian or Ubuntu.
 
 
@@ -34,8 +36,17 @@ Launch Neovim and wait for everything to be installed automatically(it may take 
 
 ## Dependencies
 
-For `nvim-telescope` on ubuntu: `sudo apt install ripgrep fd-find`
-For lsp `nodejs` and `npm` needs to be installed: how to install them [tutorial](https://www.freecodecamp.org/news/how-to-install-node-js-on-ubuntu/), I install them through [nvm](https://github.com/nvm-sh/nvm); NOTE: don't install them from Ubuntu's or Debian's repos becouse those versions are probabily too old to be compatible with this setup.
+For `nvim-telescope` on ubuntu:
+
+```bash
+sudo apt install ripgrep fd-find
+```
+
+For lsp `nodejs` and `npm` need to be installed:
+
+how to install them [tutorial](https://www.freecodecamp.org/news/how-to-install-node-js-on-ubuntu/), I install them through [nvm](https://github.com/nvm-sh/nvm);
+
+NOTE: don't install them from Ubuntu's or Debian's repos becouse those versions are probabily too old to be compatible with this setup.
 
 
 ## References
@@ -43,7 +54,7 @@ For lsp `nodejs` and `npm` needs to be installed: how to install them [tutorial]
 - The inspiration and knowledge necessaries for building my own config came from these repos:
     - [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
     - [TJDevries' configuration](https://github.com/tjdevries/config.nvim)
-    - [ChristianChiarulli Lunarvim project](https://github.com/LunarVim)
+    - [ChristianChiarulli's Lunarvim project](https://github.com/LunarVim)
     - [Lunarvim's starting configuration](https://github.com/LunarVim/Launch.nvim)
     - [Chris' configuration](https://github.com/ChristianChiarulli/nvim)
 
