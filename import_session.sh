@@ -4,5 +4,5 @@ dir=$HOME/.config/nvim/session
 if [ -d $dir ]; then
     rm -r ./nvim/session
     cp -r $dir ./nvim/ &&
-    echo "Operation Completed"
+    echo "Startify session has been imported."
 fi

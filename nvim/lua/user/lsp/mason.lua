@@ -12,7 +12,7 @@ local servers = {
     "clangd",
     -- "cssls",
     -- "html",
-    "tsserver",
+    "ts_ls",
     "pyright",
     -- "bashls",
     -- "jsonls",
