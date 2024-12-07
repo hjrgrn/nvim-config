@@ -19,7 +19,8 @@ Build Neovim [from source](https://github.com/neovim/neovim/blob/master/BUILD.md
 Clean up you previous neovim configuration and install the new one with the scripts `setup.sh`:
 
 ```bash
-cd <root_directory>
+git clone 'https://github.com/hjrgrn/Neovim-Configuration.git'
+cd Neovim-Configuration
 chmod 760 setup.sh
 ./setup.sh
 ```
@@ -51,7 +52,7 @@ NOTE: don't install them from Ubuntu's or Debian's repos becouse those versions 
 
 ## References
 
-- The inspiration and knowledge necessaries for building my own config came from these repos:
+- Inspiration taken from these repos:
     - [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
     - [TJDevries' configuration](https://github.com/tjdevries/config.nvim)
     - [ChristianChiarulli's Lunarvim project](https://github.com/LunarVim)
