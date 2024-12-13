@@ -88,7 +88,6 @@ cmp.setup({
         ultisnips = "(Snippet)",
         buffer = "(Buffer)",
     },
-    -- unil here
     sources = {
         { name = "nvim_lsp" },
         { name = "nvim_lua" },
