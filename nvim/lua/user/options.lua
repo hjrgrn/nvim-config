@@ -59,9 +59,16 @@ for k, v in pairs(options) do
     vim.opt[k] = v
 end
 
--- removing trailing white spaces
+-- Autocommands
 vim.api.nvim_create_autocmd("BufWritePre", {
     desc = 'Removing trailing white spaces.',
     pattern = '*',
     command = [[%s/\s\+$//e]]
+})
+
+vim.api.nvim_create_autocmd('TextYankPost', {
+    desc = 'Highlight when yanking (copying) text',
+    callback = function()
+        vim.highlight.on_yank()
+    end,
 })

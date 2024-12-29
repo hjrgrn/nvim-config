@@ -131,8 +131,6 @@ require('lazy').setup({
                         return vim.fn.executable 'make' == 1
                     end,
                 },
-                { 'nvim-telescope/telescope-ui-select.nvim' },
-
                 -- Useful for getting pretty icons, but requires a Nerd Font.
                 { 'nvim-tree/nvim-web-devicons' },
             },

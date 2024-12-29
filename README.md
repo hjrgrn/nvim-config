@@ -1,7 +1,7 @@
 # Neovim Configuration
 
 My personal Neovim configuration.
-Very simple configuration that provides lsp servers and formatting for: Rust, C, Python, Javascript and Lua; along with other features.
+Very simple configuration that provides lsp servers and formatting for: Rust, C, Python, Javascript, CSS, HTML and Lua; along with other features.
 All the plugins are pinned to a specific commit in order to give better stability.
 
 

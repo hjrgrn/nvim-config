@@ -9,29 +9,8 @@ vim.g.startify_lists = {
     { type = "bookmarks", header = { " Bookmarks" } },
 }
 
--- bookmarks
-vim.g.startify_bookmarks = {
-    { E = "~/.config/nvim" },
-    { w = "~/.config/qtile" },
-    { p = "~/archi/projects" },
-    { a = "~/.config/alacritty" }
-}
-
 -- automatically update the sessions
 vim.g.startify_session_persistence = true
-
-
--- vim.g.startify_custom_header = {
---     [[        __/\\\________/\\\______/\\\\\\\\\\\_]],
---     [[         _\/\\\_______\/\\\_____\/////\\\///__]],
---     [[          _\/\\\_______\/\\\_________\/\\\_____]],
---     [[           _\/\\\\\\\\\\\\\\\_________\/\\\_____]],
---     [[            _\/\\\/////////\\\_________\/\\\_____]],
---     [[             _\/\\\_______\/\\\_________\/\\\_____]],
---     [[              _\/\\\_______\/\\\__/\\\___\/\\\_____]],
---     [[               _\/\\\_______\/\\\_\//\\\\\\\\\______]],
---     [[                _\///________\///___\/////////_______]],
--- }
 
 
 vim.g.startify_custom_header = {
