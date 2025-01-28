@@ -19,8 +19,8 @@ Build Neovim [from source](https://github.com/neovim/neovim/blob/master/BUILD.md
 Clean up you previous neovim configuration and install the new one with the scripts `setup.sh`:
 
 ```bash
-git clone 'https://github.com/hjrgrn/Neovim-Configuration.git'
-cd Neovim-Configuration
+git clone 'https://github.com/hjrgrn/nvim-config.git'
+cd nvim-config
 chmod 760 setup.sh
 ./setup.sh
 ```
