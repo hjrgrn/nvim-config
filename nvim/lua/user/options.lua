@@ -41,8 +41,8 @@ local options = {
     relativenumber = true,     -- set relative numbered lines
     numberwidth = 2,           -- set number column width to 2 {default 4}
     signcolumn = "yes",        -- always show the sign column, otherwise it would shift the text each time
-    scrolloff = 8,             -- is one of my fav
-    sidescrolloff = 8,
+    scrolloff = 3,             -- is one of my fav
+    sidescrolloff = 3,
     guifont = "monospace:h19", -- the font used in graphical neovim applications
 }
 
