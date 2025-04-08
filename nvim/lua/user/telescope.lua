@@ -43,7 +43,8 @@ vim.keymap.set('n', '<leader><leader>c', builtin.git_commits,
     { desc = '[ ] Lists Git [C]ommit with diff preview and actions' })
 vim.keymap.set('n', '<leader><leader>w', builtin.grep_string, { desc = '[S]earch current [W]ord' })
 vim.keymap.set('n', '<leader><leader>d', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
-vim.keymap.set('n', '<leader><leader>r', builtin.lsp_references, { desc = '[S]earch Lsp [R]eferences' })
+vim.keymap.set('n', '<leader><leader>r', builtin.resume, { desc = '[R]esume' })
+-- vim.keymap.set('n', '<leader><leader>r', builtin.lsp_references, { desc = '[S]earch Lsp [R]eferences' })
 vim.keymap.set('n', '<leader><leader>o', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
 vim.keymap.set('n', '<leader><leader>b', builtin.buffers, { desc = '[ ] Find existing buffers' })
 -- Custom pickers
