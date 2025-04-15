@@ -41,21 +41,19 @@ end
 local function lsp_keymaps(client, bufnr)
     local opts = { noremap = true, silent = true }
 
+    -- TODO: refactor
     local _border = "rounded"
-
     local function bordered_hover(_opts)
         _opts = _opts or {}
         return vim.lsp.buf.hover(vim.tbl_deep_extend("force", _opts, { border = _border }))
     end
-
     vim.keymap.set("n", "K", bordered_hover, {})
-
     local function bordered_signature_help(_opts)
         _opts = _opts or {}
         return vim.lsp.buf.signature_help(vim.tbl_deep_extend("force", _opts, { border = _border }))
     end
-
     vim.keymap.set("n", "<leader>ls", bordered_signature_help, {})
+    --
 
     local keymap = vim.api.nvim_buf_set_keymap
     keymap(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
