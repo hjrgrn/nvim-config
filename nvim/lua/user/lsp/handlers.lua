@@ -10,22 +10,15 @@ M.capabilities.textDocument.completion.completionItem.snippetSupport = true
 M.capabilities = cmp_nvim_lsp.default_capabilities(M.capabilities)
 
 M.setup = function()
-    local signs = {
-
-        { name = "DiagnosticSignError", text = "" },
-        { name = "DiagnosticSignWarn", text = "" },
-        { name = "DiagnosticSignHint", text = "󰌵" },
-        { name = "DiagnosticSignInfo", text = "" },
-    }
-
-    for _, sign in ipairs(signs) do
-        vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
-    end
-
     local config = {
         virtual_text = false, -- disable virtual text
         signs = {
-            active = signs,   -- show signs
+            text = {
+                [vim.diagnostic.severity.ERROR] = '',
+                [vim.diagnostic.severity.WARN] = '',
+                [vim.diagnostic.severity.INFO] = '',
+                [vim.diagnostic.severity.HINT] = '󰌵',
+            },
         },
         update_in_insert = true,
         underline = true,
@@ -34,30 +27,40 @@ M.setup = function()
             focusable = true,
             style = "minimal",
             border = "rounded",
-            source = "always",
+            source = "if_many",
             header = "",
             prefix = "",
         },
+
     }
 
     vim.diagnostic.config(config)
 
-    vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-        border = "rounded",
-    })
-
-    vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
-        border = "rounded",
-    })
 end
 
 local function lsp_keymaps(client, bufnr)
     local opts = { noremap = true, silent = true }
+
+    local _border = "rounded"
+
+    local function bordered_hover(_opts)
+        _opts = _opts or {}
+        return vim.lsp.buf.hover(vim.tbl_deep_extend("force", _opts, { border = _border }))
+    end
+
+    vim.keymap.set("n", "K", bordered_hover, {})
+
+    local function bordered_signature_help(_opts)
+        _opts = _opts or {}
+        return vim.lsp.buf.signature_help(vim.tbl_deep_extend("force", _opts, { border = _border }))
+    end
+
+    vim.keymap.set("n", "<leader>ls", bordered_signature_help, {})
+
     local keymap = vim.api.nvim_buf_set_keymap
     keymap(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
     keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
     keymap(bufnr, "n", "gt", "<cmd>lua vim.lsp.buf.type_definition()<CR>", opts)
-    keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
     keymap(bufnr, "n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
     keymap(bufnr, "n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
     keymap(bufnr, "n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
@@ -74,7 +77,6 @@ local function lsp_keymaps(client, bufnr)
     keymap(bufnr, "n", "<leader>j", "<cmd>lua vim.diagnostic.goto_next({buffer=0})<cr>", opts)
     keymap(bufnr, "n", "<leader>k", "<cmd>lua vim.diagnostic.goto_prev({buffer=0})<cr>", opts)
     keymap(bufnr, "n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
-    keymap(bufnr, "n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
     keymap(bufnr, "n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
 end
 
