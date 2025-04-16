@@ -43,14 +43,14 @@ require('lazy').setup({
 
         -- UI
         -- 'kyazdani42/nvim-web-devicons',
-        { 'kyazdani42/nvim-web-devicons', commit = 'e73d2774d12d0ecf9e05578d692ba1ea50508cf2' },
+        { 'kyazdani42/nvim-web-devicons', commit = 'c90dee4e930ab9f49fa6d77f289bff335b49e972' },
         -- 'kyazdani42/nvim-tree.lua',
-        { 'kyazdani42/nvim-tree.lua',     commit = 'db8d7ac1f524fc6f808764b29fa695c51e014aa6' },
+        { 'kyazdani42/nvim-tree.lua',     commit = '5bea2b37523a31288e0fcab42f3be5c1bd4516bb' },
         -- 'goolord/alpha-nvim',
         -- 'mhinz/vim-startify',
         { 'mhinz/vim-startify',           commit = '4e089dffdad46f3f5593f34362d530e8fe823dcf' },
         -- 'akinsho/bufferline.nvim',
-        { 'akinsho/bufferline.nvim',      commit = '261a72b90d6db4ed8014f7bda976bcdc9dd7ce76' },
+        { 'akinsho/bufferline.nvim',      commit = '655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3' },
 
         -- Colorschemes
         -- 'folke/tokyonight.nvim',
