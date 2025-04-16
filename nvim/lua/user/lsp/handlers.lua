@@ -35,25 +35,10 @@ M.setup = function()
     }
 
     vim.diagnostic.config(config)
-
 end
 
 local function lsp_keymaps(client, bufnr)
     local opts = { noremap = true, silent = true }
-
-    -- TODO: refactor
-    local _border = "rounded"
-    local function bordered_hover(_opts)
-        _opts = _opts or {}
-        return vim.lsp.buf.hover(vim.tbl_deep_extend("force", _opts, { border = _border }))
-    end
-    vim.keymap.set("n", "K", bordered_hover, {})
-    local function bordered_signature_help(_opts)
-        _opts = _opts or {}
-        return vim.lsp.buf.signature_help(vim.tbl_deep_extend("force", _opts, { border = _border }))
-    end
-    vim.keymap.set("n", "<leader>ls", bordered_signature_help, {})
-    --
 
     local keymap = vim.api.nvim_buf_set_keymap
     keymap(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
@@ -62,6 +47,10 @@ local function lsp_keymaps(client, bufnr)
     keymap(bufnr, "n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
     keymap(bufnr, "n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
     keymap(bufnr, "n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
+    keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover(vim.tbl_deep_extend('force', {}, { border = 'rounded' }))<CR>",
+        opts)
+    keymap(bufnr, "n", "<leader>ls",
+        "<cmd>lua vim.lsp.buf.signature_help(vim.tbl_deep_extend('force', {}, { border = 'rounded' }))<cr>", opts)
     -- NOTE: if the client is pyright then use the official black plugin
     -- as a formatter, this way we avoiding using another plugin like Null-ls
     if client.name == "pyright" then
