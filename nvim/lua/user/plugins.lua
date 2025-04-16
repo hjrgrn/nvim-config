@@ -67,15 +67,15 @@ require('lazy').setup({
 
         -- cmp plugins
         -- 'hrsh7th/nvim-cmp',
-        { 'hrsh7th/nvim-cmp',         commit = '3403e2e9391ed0a28c3afddd8612701b647c8e26' }, -- The completion plugin
+        { 'hrsh7th/nvim-cmp',         commit = 'b5311ab3ed9c846b585c0c15b7559be131ec4be9' }, -- The completion plugin
         -- 'hrsh7th/cmp-buffer', -- buffer completions
-        { 'hrsh7th/cmp-buffer',       commit = '3022dbc9166796b644a841a02de8dd1cc1d311fa' }, -- buffer completions
+        { 'hrsh7th/cmp-buffer',       commit = 'b74fab3656eea9de20a9b8116afa3cfc4ec09657' }, -- buffer completions
         -- 'hrsh7th/cmp-path', -- path completions
-        { 'hrsh7th/cmp-path',         commit = '91ff86cd9c29299a64f968ebb45846c485725f23' }, -- path completions
+        { 'hrsh7th/cmp-path',         commit = 'c6635aae33a50d6010bf1aa756ac2398a2d54c32' }, -- path completions
         -- 'saadparwaiz1/cmp_luasnip', -- snippet completions
         { 'saadparwaiz1/cmp_luasnip', commit = '98d9cb5c2c38532bd9bdb481067b20fea8f32e90' }, -- snippet completions
         -- 'hrsh7th/cmp-nvim-lsp',
-        { 'hrsh7th/cmp-nvim-lsp',     commit = '99290b3ec1322070bcfb9e846450a46f6efa50f0' },
+        { 'hrsh7th/cmp-nvim-lsp',     commit = 'a8912b88ce488f411177fc8aed358b04dc246d7b' },
         -- 'hrsh7th/cmp-nvim-lua',
         { 'hrsh7th/cmp-nvim-lua',     commit = 'f12408bdb54c39c23e67cab726264c10db33ada8' },
 
