@@ -26,9 +26,9 @@ require('lazy').setup({
 
         -- General
         -- 'nvim-lua/plenary.nvim', -- Useful lua functions used ny lots of plugins
-        { 'nvim-lua/plenary.nvim',     commit = '2d9b06177a975543726ce5c73fca176cedbffe9d' }, -- Useful lua functions used by lots of plugins
+        { 'nvim-lua/plenary.nvim',     commit = '857c5ac632080dba10aae49dba902ce3abf91b35' }, -- Useful lua functions used by lots of plugins
         -- 'nvim-lualine/lualine.nvim',
-        { 'nvim-lualine/lualine.nvim', commit = '2a5bae925481f999263d6f5ed8361baef8df4f83' },
+        { 'nvim-lualine/lualine.nvim', commit = '86fe39534b7da729a1ac56c0466e76f2c663dc42' },
         'norcalli/nvim-colorizer.lua',
         'tpope/vim-commentary',
         -- 'lewis6991/impatient.nvim', -- this may be necessary for not having to deal with lazy loading
@@ -36,7 +36,7 @@ require('lazy').setup({
         {
             'folke/todo-comments.nvim',
             event = 'VimEnter',
-            commit = 'ae0a2afb47cf7395dc400e5dc4e05274bf4fb9e0',
+            commit = '304a8d204ee787d2544d8bc23cd38d2f929e7cc5',
             dependencies = { 'nvim-lua/plenary.nvim' },
             -- opts = { signs = false }
         },
