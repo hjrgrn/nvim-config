@@ -56,7 +56,7 @@ require('lazy').setup({
         -- 'folke/tokyonight.nvim',
         {
             'folke/tokyonight.nvim',
-            commit = 'b262293ef481b0d1f7a14c708ea7ca649672e200',
+            commit = '057ef5d260c1931f1dffd0f052c685dcd14100a3',
             lazy = false,
             priority = 1000,
             opts = {},
