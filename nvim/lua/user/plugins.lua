@@ -26,9 +26,9 @@ require('lazy').setup({
 
         -- General
         -- 'nvim-lua/plenary.nvim', -- Useful lua functions used ny lots of plugins
-        { 'nvim-lua/plenary.nvim',     commit = '2d9b06177a975543726ce5c73fca176cedbffe9d' }, -- Useful lua functions used by lots of plugins
+        { 'nvim-lua/plenary.nvim',     commit = '857c5ac632080dba10aae49dba902ce3abf91b35' }, -- Useful lua functions used by lots of plugins
         -- 'nvim-lualine/lualine.nvim',
-        { 'nvim-lualine/lualine.nvim', commit = '2a5bae925481f999263d6f5ed8361baef8df4f83' },
+        { 'nvim-lualine/lualine.nvim', commit = '86fe39534b7da729a1ac56c0466e76f2c663dc42' },
         'norcalli/nvim-colorizer.lua',
         'tpope/vim-commentary',
         -- 'lewis6991/impatient.nvim', -- this may be necessary for not having to deal with lazy loading
@@ -36,27 +36,27 @@ require('lazy').setup({
         {
             'folke/todo-comments.nvim',
             event = 'VimEnter',
-            commit = 'ae0a2afb47cf7395dc400e5dc4e05274bf4fb9e0',
+            commit = '304a8d204ee787d2544d8bc23cd38d2f929e7cc5',
             dependencies = { 'nvim-lua/plenary.nvim' },
             -- opts = { signs = false }
         },
 
         -- UI
         -- 'kyazdani42/nvim-web-devicons',
-        { 'kyazdani42/nvim-web-devicons', commit = 'e73d2774d12d0ecf9e05578d692ba1ea50508cf2' },
+        { 'kyazdani42/nvim-web-devicons', commit = 'c90dee4e930ab9f49fa6d77f289bff335b49e972' },
         -- 'kyazdani42/nvim-tree.lua',
-        { 'kyazdani42/nvim-tree.lua',     commit = 'db8d7ac1f524fc6f808764b29fa695c51e014aa6' },
+        { 'kyazdani42/nvim-tree.lua',     commit = '5bea2b37523a31288e0fcab42f3be5c1bd4516bb' },
         -- 'goolord/alpha-nvim',
         -- 'mhinz/vim-startify',
         { 'mhinz/vim-startify',           commit = '4e089dffdad46f3f5593f34362d530e8fe823dcf' },
         -- 'akinsho/bufferline.nvim',
-        { 'akinsho/bufferline.nvim',      commit = '261a72b90d6db4ed8014f7bda976bcdc9dd7ce76' },
+        { 'akinsho/bufferline.nvim',      commit = '655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3' },
 
         -- Colorschemes
         -- 'folke/tokyonight.nvim',
         {
             'folke/tokyonight.nvim',
-            commit = 'b262293ef481b0d1f7a14c708ea7ca649672e200',
+            commit = '057ef5d260c1931f1dffd0f052c685dcd14100a3',
             lazy = false,
             priority = 1000,
             opts = {},
@@ -67,15 +67,15 @@ require('lazy').setup({
 
         -- cmp plugins
         -- 'hrsh7th/nvim-cmp',
-        { 'hrsh7th/nvim-cmp',         commit = '3403e2e9391ed0a28c3afddd8612701b647c8e26' }, -- The completion plugin
+        { 'hrsh7th/nvim-cmp',         commit = 'b5311ab3ed9c846b585c0c15b7559be131ec4be9' }, -- The completion plugin
         -- 'hrsh7th/cmp-buffer', -- buffer completions
-        { 'hrsh7th/cmp-buffer',       commit = '3022dbc9166796b644a841a02de8dd1cc1d311fa' }, -- buffer completions
+        { 'hrsh7th/cmp-buffer',       commit = 'b74fab3656eea9de20a9b8116afa3cfc4ec09657' }, -- buffer completions
         -- 'hrsh7th/cmp-path', -- path completions
-        { 'hrsh7th/cmp-path',         commit = '91ff86cd9c29299a64f968ebb45846c485725f23' }, -- path completions
+        { 'hrsh7th/cmp-path',         commit = 'c6635aae33a50d6010bf1aa756ac2398a2d54c32' }, -- path completions
         -- 'saadparwaiz1/cmp_luasnip', -- snippet completions
         { 'saadparwaiz1/cmp_luasnip', commit = '98d9cb5c2c38532bd9bdb481067b20fea8f32e90' }, -- snippet completions
         -- 'hrsh7th/cmp-nvim-lsp',
-        { 'hrsh7th/cmp-nvim-lsp',     commit = '99290b3ec1322070bcfb9e846450a46f6efa50f0' },
+        { 'hrsh7th/cmp-nvim-lsp',     commit = 'a8912b88ce488f411177fc8aed358b04dc246d7b' },
         -- 'hrsh7th/cmp-nvim-lua',
         { 'hrsh7th/cmp-nvim-lua',     commit = 'f12408bdb54c39c23e67cab726264c10db33ada8' },
 
