@@ -93,11 +93,11 @@ require('lazy').setup({
 
         -- LSP
         -- 'neovim/nvim-lspconfig', -- enable LSP
-        { 'neovim/nvim-lspconfig',             commit = 'e39da6a820d2a700904117d29f0dd476d64262cf' },                -- enable LSP
+        { 'neovim/nvim-lspconfig',             commit = '2010fc6ec03e2da552b4886fceb2f7bc0fc2e9c0' },                -- enable LSP
         -- {'williamboman/mason.nvim', config = true},
-        { 'williamboman/mason.nvim',           commit = 'fc98833b6da5de5a9c5b1446ac541577059555be', config = true }, -- simple to use language server installer
+        { 'williamboman/mason.nvim',           commit = 'ad7146aa61dcaeb54fa900144d768f040090bff0', config = true }, -- simple to use language server installer
         -- 'williamboman/mason-lspconfig.nvim',
-        { 'williamboman/mason-lspconfig.nvim', commit = '1a31f824b9cd5bc6f342fc29e9a53b60d74af245' },
+        { 'williamboman/mason-lspconfig.nvim', commit = 'd6274160025ceac91ee46db7db664d5c699a214d' },
         -- Black python formatter
         {
             'psf/black',
