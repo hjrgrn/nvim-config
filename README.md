@@ -49,6 +49,12 @@ how to install them [tutorial](https://www.freecodecamp.org/news/how-to-install-
 
 NOTE: don't install them from Ubuntu's or Debian's repos becouse those versions are probabily too old to be compatible with this setup.
 
+Go for gopls:
+
+```bash
+sudo apt install golang-go
+```
+
 
 ## References
 

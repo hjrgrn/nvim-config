@@ -8,7 +8,7 @@ end
 ---@diagnostic disable-next-line: missing-fields
 configs.setup({
     -- Add languages to be installed here that you want installed for treesitter
-    ensure_installed = { 'c', 'bash', 'lua', 'python', 'rust', 'javascript', 'json', 'html', 'css' },
+    ensure_installed = { 'c', 'bash', 'lua', 'python', 'rust', 'javascript', 'json', 'html', 'css', 'go' },
 
     highlight = {
         enable = true,
