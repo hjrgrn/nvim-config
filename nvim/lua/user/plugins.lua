@@ -45,7 +45,7 @@ require('lazy').setup({
         -- 'kyazdani42/nvim-web-devicons',
         { 'kyazdani42/nvim-web-devicons', commit = 'c90dee4e930ab9f49fa6d77f289bff335b49e972' },
         -- 'kyazdani42/nvim-tree.lua',
-        { 'kyazdani42/nvim-tree.lua',     commit = '5bea2b37523a31288e0fcab42f3be5c1bd4516bb' },
+        { 'kyazdani42/nvim-tree.lua',     commit = '02ccbcd4af9a7fa159251f721d763c0d16f91703' },
         -- 'goolord/alpha-nvim',
         -- 'mhinz/vim-startify',
         { 'mhinz/vim-startify',           commit = '4e089dffdad46f3f5593f34362d530e8fe823dcf' },
