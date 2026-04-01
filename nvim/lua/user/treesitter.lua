@@ -1,31 +1,25 @@
-local status_ok, configs = pcall(require, "nvim-treesitter.configs")
-if not status_ok then
-    return
+-- Treesitter configuration function
+
+return function()
+    -- Define which filetypes to handle
+    local languages = { 'c', 'bash', 'lua', 'python', 'rust', 'javascript', 'json', 'html', 'css', 'go' }
+
+    -- Create an autocmd group
+    local group = vim.api.nvim_create_augroup('TreesitterSetup', { clear = true })
+
+    -- Enable highlighting and indentation on FileType
+    vim.api.nvim_create_autocmd('FileType', {
+        group = group,
+        pattern = languages,
+        callback = function(args)
+            -- Start syntax highlighting
+            vim.treesitter.start(args.buf)
+
+            -- Enable treesitter-based indentation
+            vim.bo[args.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+        end,
+    })
+
+    -- Auto-install parsers for these languages
+    require('nvim-treesitter').install(languages)
 end
-
-
--- See `:help nvim-treesitter`
----@diagnostic disable-next-line: missing-fields
-configs.setup({
-    -- Add languages to be installed here that you want installed for treesitter
-    ensure_installed = { 'c', 'bash', 'lua', 'python', 'rust', 'javascript', 'json', 'html', 'css', 'go' },
-
-    highlight = {
-        enable = true,
-        -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-        -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-        -- Using this option may slow down your editor, and you may see some duplicate highlights.
-        -- Instead of true it can also be a list of languages
-        additional_vim_regex_highlighting = false,
-    },
-    indent = { enable = true },
-    incremental_selection = {
-        enable = true,
-        keymaps = {
-            init_selection = '<c-space>',
-            node_incremental = '<c-space>',
-            scope_incremental = '<c-s>',
-            node_decremental = '<c-backspace>',
-        },
-    },
-})
