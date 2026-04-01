@@ -108,7 +108,7 @@ require('lazy').setup({
         -- TreeSitter
         { -- Highlight, edit, and navigate code
             'nvim-treesitter/nvim-treesitter',
-            commit = '33d27173876499a0f037cb9edff90d583711b6ae',
+            commit = '7caec274fd19c12b55902a5b795100d21531391f',
             build = ":TSUpdate",
         },
 
