@@ -108,7 +108,7 @@ require('lazy').setup({
         -- Treesitter
         {
             'nvim-treesitter/nvim-treesitter',
-            branch = 'main',
+            commit = '7caec274fd19c12b55902a5b795100d21531391f',
             build = ':TSUpdate',
             config = require("user.treesitter")
         },
