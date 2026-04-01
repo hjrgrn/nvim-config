@@ -29,7 +29,7 @@ require('lazy').setup({
         { 'nvim-lua/plenary.nvim',     commit = '857c5ac632080dba10aae49dba902ce3abf91b35' }, -- Useful lua functions used by lots of plugins
         -- 'nvim-lualine/lualine.nvim',
         { 'nvim-lualine/lualine.nvim', commit = '86fe39534b7da729a1ac56c0466e76f2c663dc42' },
-        'norcalli/nvim-colorizer.lua',
+        -- 'norcalli/nvim-colorizer.lua',
         'tpope/vim-commentary',
         -- 'lewis6991/impatient.nvim', -- this may be necessary for not having to deal with lazy loading
         -- 'folke/todo-comments.nvim',
@@ -93,11 +93,11 @@ require('lazy').setup({
 
         -- LSP
         -- 'neovim/nvim-lspconfig', -- enable LSP
-        { 'neovim/nvim-lspconfig',             commit = '2010fc6ec03e2da552b4886fceb2f7bc0fc2e9c0' },                -- enable LSP
+        { 'neovim/nvim-lspconfig',             commit = '8e2084bf5e40c79c1f42210a6ef96a0a4793a763' },                -- enable LSP
         -- {'williamboman/mason.nvim', config = true},
-        { 'williamboman/mason.nvim',           commit = 'ad7146aa61dcaeb54fa900144d768f040090bff0', config = true }, -- simple to use language server installer
+        { 'williamboman/mason.nvim',           commit = '44d1e90e1f66e077268191e3ee9d2ac97cc18e65', config = true }, -- simple to use language server installer
         -- 'williamboman/mason-lspconfig.nvim',
-        { 'williamboman/mason-lspconfig.nvim', commit = 'd6274160025ceac91ee46db7db664d5c699a214d' },
+        { 'williamboman/mason-lspconfig.nvim', commit = '25f609e7fca78af7cede4f9fa3af8a94b1c4950b' },
         -- Black python formatter
         {
             'psf/black',
