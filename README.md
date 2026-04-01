@@ -1,8 +1,8 @@
 # Neovim Configuration
 
 My personal Neovim configuration.
-Very simple configuration that provides lsp servers and formatting for: Rust, C, Python, Javascript, CSS, HTML and Lua; along with other features.
-All the plugins are pinned to a specific commit in order to give better stability.
+A simple setup that provides LSP servers and formatting for Go, Rust, C, Python, JavaScript, CSS, HTML, and Lua, along with other features.
+All plugins are pinned to specific commits for better stability.
 
 
 ## Neovim version
@@ -16,7 +16,7 @@ Build Neovim [from source](https://github.com/neovim/neovim/blob/master/BUILD.md
 
 ## Usage
 
-Clean up you previous neovim configuration and install the new one with the scripts `setup.sh`:
+Clean up you previous Neovim configuration and install the new one with the scripts `setup.sh`:
 
 ```bash
 git clone 'https://github.com/hjrgrn/nvim-config.git'
@@ -32,7 +32,7 @@ chmod 760 import_session.sh
 ./import_session.sh
 ```
 
-Launch Neovim and wait for everything to be installed automatically(it may take a couple of minutes).
+Launch Neovim and wait for everything to be installed automatically (it may take a couple of minutes).
 
 
 ## Dependencies
@@ -47,12 +47,20 @@ For lsp `nodejs` and `npm` need to be installed:
 
 how to install them [tutorial](https://www.freecodecamp.org/news/how-to-install-node-js-on-ubuntu/), I install them through [nvm](https://github.com/nvm-sh/nvm);
 
-NOTE: don't install them from Ubuntu's or Debian's repos becouse those versions are probabily too old to be compatible with this setup.
+> NOTE: don't install them from Ubuntu's or Debian's repos becouse those versions are probabily too old to be compatible with this setup.
 
-Go for gopls:
+For Gopls:
 
 ```bash
 sudo apt install golang-go
+```
+
+For nvim-treesitter:
+
+Install [Rust](https://rust-lang.org/learn/get-started/), then:
+
+```bash
+cargo install --locked tree-sitter-cli
 ```
 
 
