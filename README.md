@@ -9,7 +9,7 @@ All the plugins are pinned to a specific commit in order to give better stabilit
 
 This configuration is guaranteed to work with this version of Neovim:
 
-Commit: `9fa7c0a04638ee3d5fefbdcec347b1c07a5ce9ce`
+Commit: `fc7e5cf6c93fef08effc183087a2c8cc9bf0d75a`
 
 Build Neovim [from source](https://github.com/neovim/neovim/blob/master/BUILD.md), expecially if you are using Debian or Ubuntu.
 
