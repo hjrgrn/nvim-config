@@ -61,8 +61,8 @@ local function lsp_keymaps(client, bufnr)
     -- -- --
     keymap(bufnr, "n", "LI", "<cmd>LspInfo<cr>", opts)
     keymap(bufnr, "n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
-    keymap(bufnr, "n", "<leader>j", "<cmd>lua vim.diagnostic.goto_next({buffer=0})<cr>", opts)
-    keymap(bufnr, "n", "<leader>k", "<cmd>lua vim.diagnostic.goto_prev({buffer=0})<cr>", opts)
+    keymap(bufnr, "n", "<leader>j", "<cmd>lua vim.diagnostic.jump({count=1,float=true})<cr>", opts)
+    keymap(bufnr, "n", "<leader>k", "<cmd>lua vim.diagnostic.jump({count=1,float=true})<cr>", opts)
     keymap(bufnr, "n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
     keymap(bufnr, "n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
 end
