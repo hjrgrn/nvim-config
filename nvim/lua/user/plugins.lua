@@ -30,6 +30,7 @@ require('lazy').setup({
         -- 'nvim-lualine/lualine.nvim',
         { 'nvim-lualine/lualine.nvim', commit = '86fe39534b7da729a1ac56c0466e76f2c663dc42' },
         -- 'norcalli/nvim-colorizer.lua',
+        { 'hjrgrn/nvim-colorizer.lua', branch = 'nvim-0.12' },
         'tpope/vim-commentary',
         -- 'lewis6991/impatient.nvim', -- this may be necessary for not having to deal with lazy loading
         -- 'folke/todo-comments.nvim',
@@ -108,7 +109,7 @@ require('lazy').setup({
         -- Treesitter
         {
             'nvim-treesitter/nvim-treesitter',
-            commit = '7caec274fd19c12b55902a5b795100d21531391f',
+            commit = '4916d6592ede8c07973490d9322f187e07dfefac',
             build = ':TSUpdate',
             config = require("user.treesitter")
         },
