@@ -76,7 +76,7 @@ require('lazy').setup({
         -- 'saadparwaiz1/cmp_luasnip', -- snippet completions
         { 'saadparwaiz1/cmp_luasnip', commit = '98d9cb5c2c38532bd9bdb481067b20fea8f32e90' }, -- snippet completions
         -- 'hrsh7th/cmp-nvim-lsp',
-        { 'hrsh7th/cmp-nvim-lsp',     commit = 'a8912b88ce488f411177fc8aed358b04dc246d7b' },
+        { 'hrsh7th/cmp-nvim-lsp',     commit = 'cbc7b02bb99fae35cb42f514762b89b5126651ef' },
         -- 'hrsh7th/cmp-nvim-lua',
         { 'hrsh7th/cmp-nvim-lua',     commit = 'f12408bdb54c39c23e67cab726264c10db33ada8' },
 
