@@ -45,7 +45,7 @@ local options = {
     sidescrolloff = 3,
     guifont = "monospace:h19", -- the font used in graphical neovim applications
     spell = true,
-    spellang = { "en", "it" }
+    spelllang = { "en", "it" }
 }
 
 vim.g.loaded_netrw = 1
